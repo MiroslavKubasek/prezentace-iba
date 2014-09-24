@@ -32,7 +32,8 @@ module.exports = function(grunt) {
 		cssmin: {
 			compress: {
 				files: {
-					'css/reveal.min.css': [ 'css/reveal.css' ]
+					'css/reveal.min.css': [ 'css/reveal.css' ],
+					'css/mystyle.min.css': [ 'css/mystyle.css' ]
 				}
 			}
 		},
@@ -87,7 +88,7 @@ module.exports = function(grunt) {
 
 		zip: {
 			'reveal-js-presentation.zip': [
-				'index.html',
+				'*.html',
 				'css/**',
 				'js/**',
 				'lib/**',
@@ -98,7 +99,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			main: {
-				files: [ 'Gruntfile.js', 'js/reveal.js', 'css/reveal.css' ],
+				files: [ 'Gruntfile.js', 'js/reveal.js', 'css/reveal.css', 'css/mystyle.css', '*.html' ],
 				tasks: 'default'
 			},
 			theme: {

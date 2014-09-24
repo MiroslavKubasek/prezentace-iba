@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.reveal blockquote {
+	width: 95%;
+	background: rgba(220,220,220,0.6);
+}
